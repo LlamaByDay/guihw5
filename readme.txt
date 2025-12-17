@@ -20,3 +20,11 @@ The page cannot be resized. Initially I was just putting this off, but now I wou
     the provided board image so I don't have to manually match the unevenly sized spaces.
 No dictionary. I wanted to do this one, I just ran out of time
 Blank tiles are scored properly but currently aren't built to "commit" as a tile when you play them
+
+Partially implemented:
+I'm going to be honest, I have no idea whether this counts as partially or fully implemented. Tiles revert to their
+    original position when dropped, rather than always returning to the hand. If dropped from the hand they'll return
+    to the hand, and if dropped from a board space they will return to that board space.
+I did not read the scoring instructions until finished, which is why tiles can be placed out of sequence and the game
+    doesn't yell at you until you try to submit it. *Personally* I find this to be a cleaner play experience than
+    bouncing when not placed sequentially, but I may be biased as it is far too late for me to change this

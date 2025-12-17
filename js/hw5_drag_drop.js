@@ -1,3 +1,5 @@
+//github.com/llamabyday
+
 $(".tile").draggable({
     revert: "invalid"
 });

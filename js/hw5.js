@@ -1,3 +1,5 @@
+//github.com/llamabyday
+
 var handContainerTiles = $("#handContainerTiles");
 var boardContainerDroppables = $("#boardContainerDroppables");
 var scoreCounter = $("#scoreCounter");

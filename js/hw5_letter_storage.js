@@ -1,3 +1,5 @@
+//github.com/llamabyday
+
 class letterData {
     constructor(count, value) {
         this.count = count;
