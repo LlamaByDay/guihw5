@@ -4,6 +4,9 @@ https://llamabyday.github.io/guihw5/hw5.html
 Repository URL: 
 https://github.com/LlamaByDay/guihw5
 
+Citations:
+refresh.svg and right-arrow.svg are from iconoir.com
+
 Complete features:
 Tiles propagate from a letter storage class that utilizes a map to track how many of each tile there are
 Tiles can be dragged and dropped from the hand to spaces on the board, and back to the hand
