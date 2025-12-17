@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="hw5.css"/>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/humanity/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    </head>
+    <body>
+        <div id="playArea">
+
+            <div id="boardContainer">
+                <div id="boardContainerImage">
+                    <img src="images/Scrabble_Board_OneLine.png" id="boardImg">
+                </div>
+                <div id="boardContainerDroppables"> <!-- This board image and its unevenly sized squares can get fucked -->
+                    <div class="boardDrop" style="margin-right: 6px" data-type=""></div>
+                    <div class="boardDrop" style="margin-right: 7px" data-type=""></div>
+                    <div class="boardDrop" style="margin-right: 6px" data-type="fullDouble"></div>
+                    <div class="boardDrop" style="margin-right: 4px" data-type=""></div>
+                    <div class="boardDrop" style="margin-right: 5px" data-type=""></div>
+                    <div class="boardDrop" style="margin-right: 4px" data-type=""></div>
+                    <div class="boardDrop" style="margin-right: 6px" data-type="singleDouble"></div>
+                    <div class="boardDrop" style="margin-right: 4px" data-type=""></div>
+                    <div class="boardDrop" style="margin-right: 7px" data-type="singleDouble"></div>
+                    <div class="boardDrop" style="margin-right: 5px" data-type=""></div>
+                    <div class="boardDrop" style="margin-right: 7px" data-type=""></div>
+                    <div class="boardDrop" style="margin-right: 6px" data-type=""></div>
+                    <div class="boardDrop" style="margin-right: 7px" data-type="fullDouble"></div>
+                    <div class="boardDrop" style="margin-right: 5px" data-type=""></div>
+                    <div class="boardDrop" style="margin-right: 4px" data-type=""></div>
+                </div>
+            </div>
+
+            <p>
+                <span class="bold">Score: </span><span id="scoreCounter">0</span>
+                <span class="bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top Score: </span><span id="topScoreCounter">0</span> 
+                <!--There has to be a better way to pad for space-->
+            </p>
+
+            <div id="handContainer">
+                <div id="handContainerImage">
+                    <img src="images/scrabble-tile-holder-406774_640.png" id="handImg">
+                </div>
+                <div id="handContainerTiles">
+                </div>
+            </div>
+            <div id="errorDiv"></div>
+            
+            <div id="controls">
+                <button onclick="resetBoard()"><img src="images/refresh.svg" class="icon"></button>
+                <button onclick="playHand()"><img src="images/arrow-right.svg" class="icon"></button>
+            </div>
+        </div>
+        <script src="js/hw5_letter_storage.js"></script>
+        <script src="js/hw5_drag_drop.js"></script>
+        <script src="js/hw5.js"></script>
+    </body>
+</html>

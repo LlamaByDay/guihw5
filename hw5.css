@@ -1,0 +1,114 @@
+body {
+    background-color: rgb(236, 216, 188);
+}
+#playArea {
+    width: auto;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#boardContainer {
+    width: fit-content;
+    height: fit-content;
+    margin: 180px 0px 120px 0px;
+    display: grid;
+    align-self:center;
+    grid-column: 1;
+    grid-row: 1;
+}
+#boardContainerImage, #boardContainerDroppables {
+    grid-column: 1;
+    grid-row: 1;
+}
+#boardContainerDroppables {
+    border: 1px black solid;
+    width: 1163px; /*Subtract left padding*/
+    height: 77px;
+    display: flex;
+    padding-left: 3px;
+    padding-top: 3px;
+}
+#boardContainerImage {
+    height: fit-content;
+    padding: none;
+    margin: none;
+}
+#boardImg {
+    width: 1170px;
+    padding: none;
+    margin: none;
+}
+
+#handContainer {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+}
+#handContainerImage, #handContainerTiles {
+    grid-column: 1;
+    grid-row: 1;
+}
+#handContainerTiles {
+    width: 600px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+#handImg {
+    width: 600px;
+    height: 130px;
+}
+
+div.boardDrop {
+    border: 1px transparent solid;
+    width: 70px;
+    height: 77px;
+    padding:none;
+    margin: 0px 4px 0px 0px;
+}
+div.handSingleTileDiv {
+    width: 70px;
+    height: 77px;
+    padding:none;
+    margin: 0px 5px 0px 5px;
+}
+img.tile {
+    width: 70px;
+    padding: none;
+    margin: none;
+}
+button {
+    margin: 20px 10px 20px 10px;
+    font-size: 14pt;
+    background-color:rgb(226, 202, 166);
+    height: 77px;
+    width: 77px;
+    font-weight: bolder;
+}
+.bold {
+    font-weight: bold;
+}
+.error {
+    font-weight: bold;
+    color: red;
+    font-size: 12pt;
+}
+#controls {
+    display: flex;
+}
+p:not(p.error) {
+    align-self: center;
+    padding-left: 5px;
+    font-size: 15pt;
+}
+.icon {
+    width: 60px;
+    padding: 4px 0px 0px 0px;
+}
